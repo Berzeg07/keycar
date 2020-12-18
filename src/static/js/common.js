@@ -1,3 +1,6 @@
 $(document).ready(function () {
-    // alert(1);
+    $('.burger').click(function () {
+        $(this).toggleClass('is-active')
+        $('.sidebar').toggleClass('is-active')
+    })
 });
