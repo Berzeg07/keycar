@@ -2,3 +2,233 @@ mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
 		use(xlink:href="/img/svg/sprite.svg#" + name)
+
+mixin priceTable1
+	tr
+		td 1
+		td 
+			a(href="#") Аварийное вскрытие автомобиля
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 2
+		td 
+			a(href="#") Демонтаж блоков автомобиля для программирования чипа (транспондера)
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 3
+		td 
+			a(href="#") Замена корпуса складного ключа с кнопками
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 4
+		td 
+			a(href="#") Замена корпуса смарт или слотового ключа
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 5
+		td 
+			a(href="#") Заточка лезвия английский тип заготовки
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 6
+		td 
+			a(href="#") Изготовление ключа по личинке замка
+		td
+			.pricetable__price от 2 500 руб.
+
+mixin priceTable2
+	tr
+		td 1
+		td 
+			a(href="#") Программирование чипа (транспондера) с наличием рабочего ключа
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 2
+		td 
+			a(href="#") Программирование чипа (транспондера) без рабочего ключа
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 3
+		td 
+			a(href="#") Программирование и запись в память автомобиля ключа без кнопок
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 4
+		td 
+			a(href="#") Программирование и запись в автомобиль ключа с кнопками
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 5
+		td 
+			a(href="#") Программирование и запись в автомобиль ключа смарт или слотового
+		td
+			.pricetable__price от 2 500 руб.
+	tr
+		td 6
+		td 
+			a(href="#") Программирование кнопок дистанционного управления центральным замком
+		td
+			.pricetable__price от 2 500 руб.
+
+mixin popSlides
+	.swiper-slide 
+		ul.popslider__item
+			li
+				a(href="#").popslider__link Audi
+			li
+				img(src="img/sl-1.png" width="80" height="80")
+			li
+				.popslider__price
+					span от
+					|1 200 руб.
+				.popslider__time 40 мин.
+			li
+				button(type="button").btn Заказать
+
+	.swiper-slide 
+		ul.popslider__item
+			li
+				a(href="#").popslider__link BMW
+			li
+				img(src="img/sl-2.png" width="80" height="80")
+			li
+				.popslider__price
+					span от
+					|1 200 руб.
+				.popslider__time 40 мин.
+			li
+				button(type="button").btn Заказать
+
+	.swiper-slide 
+		ul.popslider__item
+			li
+				a(href="#").popslider__link Ford
+			li
+				img(src="img/sl-3.png" width="80" height="80")
+			li
+				.popslider__price
+					span от
+					|1 200 руб.
+				.popslider__time 40 мин.
+			li
+				button(type="button").btn Заказать
+
+	.swiper-slide 
+		ul.popslider__item
+			li
+				a(href="#").popslider__link Honda
+			li
+				img(src="img/sl-4.png" width="80" height="80")
+			li
+				.popslider__price
+					span от
+					|1 200 руб.
+				.popslider__time 40 мин.
+			li
+				button(type="button").btn Заказать
+
+	.swiper-slide 
+		ul.popslider__item
+			li
+				a(href="#").popslider__link Volkswagen
+			li
+				img(src="img/sl-5.png" width="80" height="80")
+			li
+				.popslider__price
+					span от
+					|1 200 руб.
+				.popslider__time 40 мин.
+			li
+				button(type="button").btn Заказать
+
+mixin slideMarkList
+	ul.marklist
+		li
+			.marklist__icon
+				img(src="img/m1.png" width="30" height="30")
+			a(href="#") Audi
+		li
+			.marklist__icon
+				img(src="img/m2.png" width="30" height="30")
+			a(href="#") BMW
+		li
+			.marklist__icon
+				img(src="img/m3.png" width="30" height="30")
+			a(href="#") Ford
+		li
+			.marklist__icon
+				img(src="img/m4.png" width="30" height="30")
+			a(href="#") Honda
+		li
+			.marklist__icon
+				img(src="img/m5.png" width="30" height="30")
+			a(href="#") Hyundai
+		li
+			.marklist__icon
+				img(src="img/m6.png" width="30" height="30")
+			a(href="#") KIA
+		li
+			.marklist__icon
+				img(src="img/m7.png" width="30" height="30")
+			a(href="#") Lada (ВАЗ)
+		li
+			.marklist__icon
+				img(src="img/m8.png" width="30" height="30")
+			a(href="#") Mazda
+		li
+			.marklist__icon
+				img(src="img/m9.png" width="30" height="30")
+			a(href="#") Mersedes
+		li
+			.marklist__icon
+				img(src="img/m10.png" width="30" height="30")
+			a(href="#") Mitsubishi
+		li
+			.marklist__icon
+				img(src="img/m11.png" width="30" height="30")
+			a(href="#") Nissan
+		li
+			.marklist__icon
+				img(src="img/m12.png" width="30" height="30")
+			a(href="#") Renault
+		li
+			.marklist__icon
+				img(src="img/m13.png" width="30" height="30")
+			a(href="#") Skoda
+		li
+			.marklist__icon
+				img(src="img/m14.png" width="30" height="30")
+			a(href="#") Toyota
+		li
+			.marklist__icon
+				img(src="img/m15.png" width="30" height="30")
+			a(href="#") Volkswagen
+		li
+			.marklist__icon
+				img(src="img/m16.png" width="30" height="30")
+			a(href="#") Chevrolet
+		li
+			.marklist__icon
+				img(src="img/m17.png" width="30" height="30")
+			a(href="#") Opel
+		li
+			.marklist__icon
+				img(src="img/m18.png" width="30" height="30")
+			a(href="#") Citroen
+		li
+			.marklist__icon
+				img(src="img/m19.png" width="30" height="30")
+			a(href="#") Land Rover
+		li
+			.marklist__icon
+				img(src="img/m20.png" width="30" height="30")
+			a(href="#") Volvo

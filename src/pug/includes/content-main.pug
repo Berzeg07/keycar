@@ -1,1 +1,420 @@
-p Контент
+.contwrap.container
+    .content
+        ul.searchblock
+            li Быстрый поиск автомастера
+            li
+                .selectblock
+                    select
+                        option Выберите марку автомобиля
+                        option Toyota
+                        option Mersedes
+
+            li
+                .selectblock
+                    select
+                        option Выберите марку автомобиля
+                        option Toyota
+                        option Mersedes
+            li
+                .selectblock
+                    select
+                        option Выберите марку автомобиля
+                        option Toyota
+                        option Mersedes
+        .slideblock
+            .slideblock__column
+                .slidercont.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide 
+                            img(src="img/img.jpg")
+                        .swiper-slide 
+                            img(src="img/img.jpg")
+                        .swiper-slide 
+                            img(src="img/img.jpg")
+
+                    .swiper-pagination
+
+                    .swiper-button-next
+                    .swiper-button-prev
+
+            .slideblock__column
+                .slidercont.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide 
+                            .slidercont__item
+                                +slideMarkList
+                        .swiper-slide 
+                            .slidercont__item
+                                +slideMarkList
+                        .swiper-slide 
+                            .slidercont__item
+                                +slideMarkList
+
+                    .swiper-pagination
+
+                    .swiper-button-next
+                    .swiper-button-prev
+
+        .contarticle
+            h1.maintitle Изготовление ключей с выездом по всей Москве
+            .conttext
+                p 
+                    |Допустим, вы приобрели автомобиль только с одним комплектом ключей, 
+                    |закажите себе их вторые экземпляры, не откладывая дело в долгий ящик! 
+                    |Запасной автоключ всегда пригодится. В случае полной утраты всех ключей 
+                    |от автомобиля рекомендуем, не теряя времени, воспользоваться нашими услугами. 
+                    |Не стоит искушать судьбу – вдруг потерянные ключи достанутся злоумышленникам?
+
+        .keypop
+            h2.maintitle Ключи для всех популярных моделей автомобилей
+            .popslider.swiper-container
+                .swiper-wrapper
+                    +popSlides
+
+                .swiper-pagination
+
+                .swiper-button-next
+                .swiper-button-prev
+
+        .photogallery
+            h2.maintitle Фотогалерея
+
+            .galleryslide.swiper-container
+                .swiper-wrapper
+                    .swiper-slide 
+                        img(src="img/slide-1.jpg")
+                    .swiper-slide 
+                        img(src="img/slide-2.jpg")
+                    .swiper-slide 
+                        img(src="img/slide-3.jpg")
+                    .swiper-slide 
+                        img(src="img/slide-4.jpg")
+
+                .swiper-pagination
+
+                .swiper-button-next
+                .swiper-button-prev
+
+        .prices
+            .table-title Слесарные работы
+            table.pricetable
+                thead
+                    tr
+                        th #
+                        th Наименование
+                        th Цена
+                tbody
+                    +priceTable1
+
+            .table-title Программирование
+            table.pricetable
+                thead
+                    tr
+                        th #
+                        th Наименование
+                        th Цена
+                tbody
+                    +priceTable2
+
+        .services
+            h2.maintitle Услуги
+            .contslider.swiper-container
+                .swiper-wrapper
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-1.jpg")
+                            .contslider__title
+                                a(href="#") Чип для автозапуска
+                            .contslider__article 
+                                |Понадобится вам, что бы установить в своей машине автозапуск, 
+                                |и при этом не жертвовать вторым ключом.
+                            button(type="button").btn Заказать
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-2.jpg")
+                            .contslider__title
+                                a(href="#") Автоключи
+                            .contslider__article 
+                                |На все автомобили города Москвы
+                            button(type="button").btn Заказать
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-3.jpg")
+                            .contslider__title
+                                a(href="#") Потерял последний ключ от авто
+                            .contslider__article 
+                                |Быстро и аккуратно откроем ваше авто без повреждений.
+                            button(type="button").btn Заказать
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-4.jpg")
+                            .contslider__title
+                                a(href="#") Вскрыть авто
+                            .contslider__article 
+                                |Произошла полная утеря, тогда вы по адресу.
+                            button(type="button").btn Заказать
+
+                .swiper-pagination
+
+                .swiper-button-next
+                .swiper-button-prev
+
+        .portfolio
+            h2.maintitle Некоторые наши работы
+            .contslider.swiper-container
+                .swiper-wrapper
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-1.jpg")
+                            .contslider__title
+                                a(href="#") Nissan Juke изготовление ключа с кнопками
+                            .contslider__article 
+                                |Nissan Juke изготовление нормального ключа с кнопками. Второй ключ просто корпус с чипом внутри которого...
+                            button(type="button").btn Заказать
+
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-2.jpg")
+                            .contslider__title
+                                a(href="#") Mercedes-Benz W210 новый ключ
+                            .contslider__article 
+                                |Mercedes-Benz W210 последний ключ перестал заводить автомобиль, что достаточно частая проблема на этих машинах. Нам принесли...
+                            button(type="button").btn Заказать
+
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-3.jpg")
+                            .contslider__title
+                                a(href="#") Изготовление ключа VW Beetle 1999
+                            .contslider__article 
+                                |Изготовление выкидного ключа VW Beetle 1999. Изначально есть два пульта ЦЗ, и один сломанный ключ. Теперь и ключ и ЦЗ...
+                            button(type="button").btn Заказать
+
+                    .swiper-slide 
+                        .contslider__item
+                            .contslider__img
+                                img(src="img/serv-4.jpg")
+                            .contslider__title
+                                a(href="#") Renault Laguna прописка нового ключа карты
+                            .contslider__article 
+                                |Нас посетил автомобиль Renault Laguna для прописки нового ключа карты. Старая карта уже разваливалась, на ней уже не работали кнопки.
+                            button(type="button").btn Заказать
+
+                .swiper-pagination
+
+                .swiper-button-next
+                .swiper-button-prev
+
+        .contarticle
+            h2.maintitle Изготовление ключей с выездом по всей Москве
+            .conttext
+                p Допустим, вы приобрели автомобиль только с одним комплектом ключей, закажите себе их вторые экземпляры, не откладывая дело в долгий ящик! Запасной автоключ всегда пригодится. В случае полной утраты всех ключей от автомобиля рекомендуем, не теряя времени, воспользоваться нашими услугами. Не стоит искушать судьбу – вдруг потерянные ключи достанутся злоумышленникам?
+
+            ul.contlist
+                li
+                    a(href="#") Изготовление нового ключа
+                li
+                    a(href="#") Изготовление чип ключа
+                li
+                    a(href="#") Восстановление комплекта ключей
+                li
+                    a(href="#") Восстановление ключа
+                li
+                    a(href="#") Изготовление нового ключа
+                li
+                    a(href="#") Изготовление чип ключа
+
+            .formblock
+                .formblock__column
+                    form(action="#").form
+                        .form__title Отправить заявку на выезд автомеханика
+
+                        ul.form__list
+                            li
+                                .form__sub-title Марка автомобиля
+                                .selectblock
+                                    select
+                                        option Выберите марку автомобиля
+                                        option Toyota
+                                        option Mersedes
+                            li
+                                .form__sub-title Контактный телефон
+                                input(type="text" placeholder="+7 (___) ___ - __ - __")
+                            li
+                                textarea.textarea(placeholder="Ваш комментарий")
+                                button(type="submit").form__btn Отправить заявку
+
+                .formblock__column
+                    .action
+                        .action__title Цены ниже диллеров
+                        ul.action__list
+                            li до
+                            li 
+                                |40
+                                span %
+
+    .sidebar
+        .streetinfo Москва, м. Каширская
+
+        ul.worktime
+            li ПН-ПТ: с 10:00 до 19:00
+            li CБ-ВС: с 10:00 до 17:00
+            li Выезд - круглосуточно
+
+        ul.nav.nav_service
+            li
+                img(src="img/nav-1.png" width="30" height="30")
+                a(href="#") Изготовление нового ключа
+            li
+                img(src="img/nav-2.png" width="30" height="30")
+                a(href="#") Изготовление чип ключа
+            li
+                img(src="img/nav-3.png" width="30" height="30")
+                a(href="#") Изготовление дубликата ключа
+            li
+                img(src="img/nav-4.png" width="30" height="30")
+                a(href="#") Восстановление комплекта ключей
+            li
+                img(src="img/nav-5.png" width="30" height="30")
+                a(href="#") Восстановление ключа
+
+        ul.nav.nav_main
+            li.nav__about
+                img(src="img/m-icon-1.png" width="20" height="20")
+                a(href="#") О компании
+            li.nav__price
+                img(src="img/m-icon-2.png" width="20" height="20")
+                a(href="#") Цены
+            li.nav__master
+                img(src="img/m-icon-3.png" width="20" height="20")
+                a(href="#") Выезд мастера
+            li.nav__contact
+                img(src="img/m-icon-4.png" width="20" height="20")
+                a(href="#") Контакты
+
+        .sidebar__sub-title Выберите марку:
+
+        ul.marklist
+            li
+                .marklist__icon
+                    img(src="img/m1.png" width="30" height="30")
+                a(href="#") Audi (12)
+            li
+                .marklist__icon
+                    img(src="img/m2.png" width="30" height="30")
+                a(href="#") BMW (6)
+            li
+                .marklist__icon
+                    img(src="img/m3.png" width="30" height="30")
+                a(href="#") Ford (18)
+            li
+                .marklist__icon
+                    img(src="img/m4.png" width="30" height="30")
+                a(href="#") Honda (14)
+            li
+                .marklist__icon
+                    img(src="img/m5.png" width="30" height="30")
+                a(href="#") Hyundai (12)
+            li
+                .marklist__icon
+                    img(src="img/m6.png" width="30" height="30")
+                a(href="#") KIA (19)
+            li
+                .marklist__icon
+                    img(src="img/m7.png" width="30" height="30")
+                a(href="#") Lada (ВАЗ) (10)
+            li
+                .marklist__icon
+                    img(src="img/m8.png" width="30" height="30")
+                a(href="#") Mazda (11)
+            li
+                .marklist__icon
+                    img(src="img/m9.png" width="30" height="30")
+                a(href="#") Mersedes (12)
+            li
+                .marklist__icon
+                    img(src="img/m10.png" width="30" height="30")
+                a(href="#") Mitsubishi (12)
+            li
+                .marklist__icon
+                    img(src="img/m11.png" width="30" height="30")
+                a(href="#") Nissan (16)
+            li
+                .marklist__icon
+                    img(src="img/m12.png" width="30" height="30")
+                a(href="#") Renault (23)
+            li
+                .marklist__icon
+                    img(src="img/m13.png" width="30" height="30")
+                a(href="#") Skoda (17)
+            li
+                .marklist__icon
+                    img(src="img/m14.png" width="30" height="30")
+                a(href="#") Toyota (6)
+            li
+                .marklist__icon
+                    img(src="img/m15.png" width="30" height="30")
+                a(href="#") Volkswagen (2)
+            li
+                .marklist__icon
+                    img(src="img/m16.png" width="30" height="30")
+                a(href="#") Chevrolet (10)
+            li
+                .marklist__icon
+                    img(src="img/m17.png" width="30" height="30")
+                a(href="#") Opel (3)
+            li
+                .marklist__icon
+                    img(src="img/m18.png" width="30" height="30")
+                a(href="#") Citroen (13)
+            li
+                .marklist__icon
+                    img(src="img/m19.png" width="30" height="30")
+                a(href="#") Land Rover (15)
+            li
+                .marklist__icon
+                    img(src="img/m20.png" width="30" height="30")
+                a(href="#") Volvo (7)
+            li
+                .marklist__icon
+                    img(src="img/m21.png" width="30" height="30")
+                a(href="#") Lexus (6)
+            li
+                .marklist__icon
+                    img(src="img/m22.png" width="30" height="30")
+                a(href="#") Acura (20)
+            li
+                .marklist__icon
+                    img(src="img/m23.png" width="30" height="30")
+                a(href="#") Subaru (3)
+            li
+                .marklist__icon
+                    img(src="img/m24.png" width="30" height="30")
+                a(href="#") Porshe (4)
+            li
+                .marklist__icon
+                    img(src="img/m25.png" width="30" height="30")
+                a(href="#") Bentley (2)
+            li
+                .marklist__icon
+                    img(src="img/m26.png" width="30" height="30")
+                a(href="#") Daewoo (2)
+            li
+                .marklist__icon
+                    img(src="img/m27.png" width="30" height="30")
+                a(href="#") Suzuki (6)
+            li
+                .marklist__icon
+                    img(src="img/m28.png" width="30" height="30")
+                a(href="#") Saab (8)
+            li
+                .marklist__icon
+                    img(src="img/m29.png" width="30" height="30")
+                a(href="#") Peugeot (11)
